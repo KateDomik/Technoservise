@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище DBDomayskaya21ModelContainer" CdmEntityContainer="DBDomayskaya21Entities">
+    <EntitySetMapping Name="Defect">
+      <EntityTypeMapping TypeName="DBDomayskaya21Model.Defect">
+        <MappingFragment StoreEntitySet="Defect">
+          <ScalarProperty Name="Defect_ID" ColumnName="Defect_ID" />
+          <ScalarProperty Name="Defect_Name" ColumnName="Defect_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Device">
+      <EntityTypeMapping TypeName="DBDomayskaya21Model.Device">
+        <MappingFragment StoreEntitySet="Device">
+          <ScalarProperty Name="Device_ID" ColumnName="Device_ID" />
+          <ScalarProperty Name="Device_Name" ColumnName="Device_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Priory">
+      <EntityTypeMapping TypeName="DBDomayskaya21Model.Priory">
+        <MappingFragment StoreEntitySet="Priory">
+          <ScalarProperty Name="Priory_ID" ColumnName="Priory_ID" />
+          <ScalarProperty Name="Priory_Name" ColumnName="Priory_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Request">
+      <EntityTypeMapping TypeName="DBDomayskaya21Model.Request">
+        <MappingFragment StoreEntitySet="Request">
+          <ScalarProperty Name="Request_ID" ColumnName="Request_ID" />
+          <ScalarProperty Name="Request_Date" ColumnName="Request_Date" />
+          <ScalarProperty Name="Request_Device_ID" ColumnName="Request_Device_ID" />
+          <ScalarProperty Name="Request_Defect_ID" ColumnName="Request_Defect_ID" />
+          <ScalarProperty Name="Request_Client_ID" ColumnName="Request_Client_ID" />
+          <ScalarProperty Name="Request_Description" ColumnName="Request_Description" />
+          <ScalarProperty Name="Request_Status_ID" ColumnName="Request_Status_ID" />
+          <ScalarProperty Name="Request_Master_ID" ColumnName="Request_Master_ID" />
+          <ScalarProperty Name="Request_Time" ColumnName="Request_Time" />
+          <ScalarProperty Name="Request_Priory_ID" ColumnName="Request_Priory_ID" />
+          <ScalarProperty Name="Request_Stage_ID" ColumnName="Request_Stage_ID" />
+          <ScalarProperty Name="Request_Comment" ColumnName="Request_Comment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Role">
+      <EntityTypeMapping TypeName="DBDomayskaya21Model.Role">
+        <MappingFragment StoreEntitySet="Role">
+          <ScalarProperty Name="Role_ID" ColumnName="Role_ID" />
+          <ScalarProperty Name="Role_Name" ColumnName="Role_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Stage">
+      <EntityTypeMapping TypeName="DBDomayskaya21Model.Stage">
+        <MappingFragment StoreEntitySet="Stage">
+          <ScalarProperty Name="Stage_ID" ColumnName="Stage_ID" />
+          <ScalarProperty Name="Stage_Name" ColumnName="Stage_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Status">
+      <EntityTypeMapping TypeName="DBDomayskaya21Model.Status">
+        <MappingFragment StoreEntitySet="Status">
+          <ScalarProperty Name="Status_ID" ColumnName="Status_ID" />
+          <ScalarProperty Name="Status_Name" ColumnName="Status_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="DBDomayskaya21Model.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User">
+      <EntityTypeMapping TypeName="DBDomayskaya21Model.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+          <ScalarProperty Name="User_Full_Name" ColumnName="User_Full_Name" />
+          <ScalarProperty Name="User_Login" ColumnName="User_Login" />
+          <ScalarProperty Name="User_Password" ColumnName="User_Password" />
+          <ScalarProperty Name="User_Role_ID" ColumnName="User_Role_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="View_All_Request">
+      <EntityTypeMapping TypeName="DBDomayskaya21Model.View_All_Request">
+        <MappingFragment StoreEntitySet="View_All_Request">
+          <ScalarProperty Name="Request_ID" ColumnName="Request_ID" />
+          <ScalarProperty Name="Request_Date" ColumnName="Request_Date" />
+          <ScalarProperty Name="Device_Name" ColumnName="Device_Name" />
+          <ScalarProperty Name="Defect_Name" ColumnName="Defect_Name" />
+          <ScalarProperty Name="User_Full_Name" ColumnName="User_Full_Name" />
+          <ScalarProperty Name="Status_Name" ColumnName="Status_Name" />
+          <ScalarProperty Name="Master" ColumnName="Master" />
+          <ScalarProperty Name="Request_Time" ColumnName="Request_Time" />
+          <ScalarProperty Name="Priory_Name" ColumnName="Priory_Name" />
+          <ScalarProperty Name="Stage_Name" ColumnName="Stage_Name" />
+          <ScalarProperty Name="Request_Comment" ColumnName="Request_Comment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="Get_Request_Master_ID" FunctionName="Хранилище DBDomayskaya21Model.Get_Request_Master_ID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBDomayskaya21Model.Get_Request_Master_ID_Result">
+          <ScalarProperty Name="Request_ID" ColumnName="Request_ID" />
+          <ScalarProperty Name="Request_Date" ColumnName="Request_Date" />
+          <ScalarProperty Name="Request_Master_ID" ColumnName="Request_Master_ID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

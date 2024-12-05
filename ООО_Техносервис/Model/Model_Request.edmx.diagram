@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="bffdb1272fa84d598fd8b407420d3d96" Name="Diagram1">
+        <EntityTypeShape EntityType="DBDomayskaya21Model.Defect" Width="1.5" PointX="1.375" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBDomayskaya21Model.Device" Width="1.5" PointX="8.375" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBDomayskaya21Model.Priory" Width="1.5" PointX="8.375" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBDomayskaya21Model.Request" Width="1.5" PointX="5.5" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBDomayskaya21Model.Role" Width="1.5" PointX="1.375" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBDomayskaya21Model.Stage" Width="1.5" PointX="8.375" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBDomayskaya21Model.Status" Width="1.5" PointX="8.375" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBDomayskaya21Model.sysdiagrams" Width="1.5" PointX="10.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBDomayskaya21Model.User" Width="1.5" PointX="3.375" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBDomayskaya21Model.View_All_Request" Width="1.5" PointX="10.25" PointY="0.5" IsExpanded="true" />
+        <AssociationConnector Association="DBDomayskaya21Model.FK_Request_Defect" ManuallyRouted="false" />
+        <AssociationConnector Association="DBDomayskaya21Model.FK_Request_Device" ManuallyRouted="false" />
+        <AssociationConnector Association="DBDomayskaya21Model.FK_Request_Priory1" ManuallyRouted="false" />
+        <AssociationConnector Association="DBDomayskaya21Model.FK_Request_Stage" ManuallyRouted="false" />
+        <AssociationConnector Association="DBDomayskaya21Model.FK_Request_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="DBDomayskaya21Model.FK_Request_User" ManuallyRouted="false" />
+        <AssociationConnector Association="DBDomayskaya21Model.FK_Request_User1" ManuallyRouted="false" />
+        <AssociationConnector Association="DBDomayskaya21Model.FK_User_Role" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
